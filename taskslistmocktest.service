@@ -1,0 +1,12 @@
+[Unit]
+Description=Tasks List Rest Service Mock Test
+After=syslog.target
+
+[Service]
+SyslogIdentifier=TasksListServiceMockTest
+ExecStart=/home/taskslistuser/TasksListServiceMockTest-1.0.jar
+User=taskslistuser
+Type=simple
+
+[Install]
+WantedBy=multi-user.target
